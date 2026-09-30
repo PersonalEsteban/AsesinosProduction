@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>asesinos.cl | Próximamente</title>
+  <meta name="description" content="asesinos.cl — sitio en construcción. Muy pronto nuevo contenido.">
+  <link rel="canonical" href="https://asesinos.cl/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (vista previa al compartir en redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asesinos.cl/">
+  <meta property="og:title" content="asesinos.cl">
+  <meta property="og:description" content="Sitio en construcción. Muy pronto nuevo contenido.">
+  <meta property="og:locale" content="es_CL">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="top">
+    <a href="/" class="logo">asesinos<span>.cl</span></a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">Próximamente</p>
+      <h1>asesinos<span>.cl</span></h1>
+      <p class="lead">Estamos preparando algo nuevo. Vuelve pronto.</p>
+      <a href="#contacto" class="btn">Escríbenos</a>
+    </section>
+
+    <section id="sobre" class="block">
+      <h2>Sobre el sitio</h2>
+      <!-- Reemplaza este texto con la descripción real del proyecto -->
+      <p>Aquí irá la descripción del proyecto. Edita este párrafo en <code>index.html</code>.</p>
+    </section>
+
+    <section id="contacto" class="block">
+      <h2>Contacto</h2>
+      <form id="form-contacto" novalidate>
+        <label>Nombre
+          <input type="text" name="nombre" required maxlength="100" autocomplete="name">
+        </label>
+        <label>Correo
+          <input type="email" name="email" required maxlength="150" autocomplete="email">
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="5" required maxlength="2000"></textarea>
+        </label>
+        <!-- Campo trampa anti-spam: los humanos no lo ven -->
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-estado" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="anio"></span> asesinos.cl</p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

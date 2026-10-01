@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+# Secretos para desarrollo local: NUNCA subir
+.dev.vars
+.env

@@ -1,0 +1,15 @@
+# Configuración de Cloudflare Pages.
+# Al existir este archivo, Cloudflare toma de aquí los bindings y variables
+# (los Secrets se siguen configurando en el panel).
+
+# Debe coincidir con el nombre del proyecto en Cloudflare Pages
+name = "asesinosproduction"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Conexión a PostgreSQL a través de Hyperdrive.
+# Crea el Hyperdrive en Cloudflare (Workers & Pages > Hyperdrive) y pega aquí su ID.
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "d4a1d8fe965e4b04a20fc1ee6b8828ea"

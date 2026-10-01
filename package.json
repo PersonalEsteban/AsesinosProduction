@@ -1,0 +1,14 @@
+{
+  "name": "asesinos-cl",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>asesinos.cl | Próximamente</title>
+  <title>asesinos.cl | En construcción</title>
   <meta name="description" content="asesinos.cl — sitio en construcción. Muy pronto nuevo contenido.">
   <link rel="canonical" href="https://asesinos.cl/">
   <meta name="robots" content="index, follow">
@@ -24,6 +24,7 @@
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#contacto">Contacto</a>
+      <a href="#ingresar">Ingresar</a>
     </nav>
   </header>
 
@@ -65,6 +66,24 @@
     <p>© <span id="anio"></span> asesinos.cl</p>
   </footer>
 
+  <!-- Login por código: se abre con cualquier enlace a #ingresar -->
+  <dialog id="dlg-login" class="modal" aria-labelledby="login-titulo">
+    <form id="form-login" class="form" novalidate>
+      <div class="fila-entre">
+        <h2 id="login-titulo">Ingresar</h2>
+        <button type="button" class="cerrar" aria-label="Cerrar" data-cerrar>&times;</button>
+      </div>
+      <p class="muted">Ingresa tu código de acceso.</p>
+      <label>Código
+        <input type="text" name="codigo" required maxlength="40" autocomplete="off"
+               autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX">
+      </label>
+      <button type="submit" class="btn">Ingresar</button>
+      <p id="login-estado" class="estado" role="status"></p>
+    </form>
+  </dialog>
+
   <script src="/js/main.js" defer></script>
+  <script src="/js/login.js" defer></script>
 </body>
 </html>

@@ -62,9 +62,8 @@ Proyecto Pages → **Settings → Variables and Secrets** (tipo **Secret**):
   Como ahora existe `wrangler.toml`, crea también `CONTACT_TO` y `CONTACT_FROM` como Secret.
 
 ### 4. Configuración de build en Cloudflare Pages
-- Build command: *(vacío)*
-- Build output directory: `public` (lo toma de `wrangler.toml`)
-- Cloudflare instala `package.json` automáticamente.
+- Build command: `npm install --omit=dev` (sin esto falla con `Could not resolve "postgres"`)
+- Build output directory: *(vacío; lo toma de `wrangler.toml` → `public`)*
 - El `name` de `wrangler.toml` debe coincidir con el nombre del proyecto en Pages.
 
 ### 5. Primer administrador
